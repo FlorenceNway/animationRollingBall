@@ -11,37 +11,48 @@
   border-radius: 50%;
   transform: translate(770px, 200px) rotate(178deg);
 }
-.circle1 {
-  width: 131px;
-  height: 169px;
-  border: 4px double;
+.innercircle {
+  width: 179px;
+  height: 72px;
+  border: 1px solid;
   border-radius: 50%;
   position: absolute;
+  left: -28px;
+  top: 39px;
+  transform: rotate(127deg);
+  background: #6d6969d6;
+}
+.shooter {
+  width: 131px;
+  height: 131px;
+  border: 4px double;
+  border-top-right-radius: 91%;
+  position: absolute;
   left: -35px;
-  top: -33px;
-  transform: rotate(64deg);
-  background: #616a7db5;
+  top: -19px;
+  transform: rotate(86deg);
+  background: black;
 }
 .hole {
   position: relative;
 }
 .outerhole {
-  border-bottom: 35px solid black;
+  border-bottom: 35px solid #0000007a;
   border-left: 25px solid #523f3f08;
   border-right: 25px solid #0000000d;
   height: 0px;
-  width: 125px;
+  width: 92px;
   border-radius: 50%;
   transform: translate(770px, 304px) rotate(180deg);
 }
 .innerhole {
-  border-bottom: 27px solid #384850;
+  border-bottom: 27px solid #262829d9;
   border-left: 25px solid #523f3f08;
   border-right: 25px solid #0000000d;
   height: 0px;
-  width: 98px;
+  width: 73px;
   border-radius: 50%;
-  transform: translate(785px, 274px) rotate(180deg);
+  transform: translate(781px, 274px) rotate(180deg);
 }
 
 /* .trapezoid {
@@ -74,7 +85,7 @@
   transform: translate(800px, 350px);
   animation: rolling 6s linear;
   transform: rotate(1020deg);
-  z-index: 10;
+  z-index: -10;
 }
 .box {
   width: 91px;
@@ -116,6 +127,6 @@
     transform: translate(780px, 350px) rotate(1880deg);
   }
   100% {
-    transform: translate(800px, 360px) rotate(1880deg);
+    transform: translate(800px, 359px) rotate(1880deg);
   }
 }
