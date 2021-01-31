@@ -1,0 +1,121 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.circle {
+  border-bottom: 120px solid black;
+  border-left: 25px solid #523f3f08;
+  border-right: 25px solid #0000000d;
+  height: 0px;
+  width: 125px;
+  border-radius: 50%;
+  transform: translate(770px, 200px) rotate(178deg);
+}
+.circle1 {
+  width: 131px;
+  height: 169px;
+  border: 4px double;
+  border-radius: 50%;
+  position: absolute;
+  left: -35px;
+  top: -33px;
+  transform: rotate(64deg);
+  background: #616a7db5;
+}
+.hole {
+  position: relative;
+}
+.outerhole {
+  border-bottom: 35px solid black;
+  border-left: 25px solid #523f3f08;
+  border-right: 25px solid #0000000d;
+  height: 0px;
+  width: 125px;
+  border-radius: 50%;
+  transform: translate(770px, 304px) rotate(180deg);
+}
+.innerhole {
+  border-bottom: 27px solid #384850;
+  border-left: 25px solid #523f3f08;
+  border-right: 25px solid #0000000d;
+  height: 0px;
+  width: 98px;
+  border-radius: 50%;
+  transform: translate(785px, 274px) rotate(180deg);
+}
+
+/* .trapezoid {
+  border-bottom: 120px solid #555;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0px;
+  width: 125px;
+  transform: translate(-75px, -80px) rotate(130deg);
+} */
+.bar1 {
+  width: 70px;
+  height: 10px;
+  background: black;
+  transform: translate(190px, 40px);
+}
+.bar2 {
+  width: 70px;
+  height: 10px;
+  background: black;
+  transform: translate(440px, 68px);
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: #444;
+  border-radius: 50px;
+  border: 5px solid;
+  border-color: orange red;
+  transform: translate(800px, 350px);
+  animation: rolling 6s linear;
+  transform: rotate(1020deg);
+  z-index: 10;
+}
+.box {
+  width: 91px;
+  height: 94px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  display: inline-block;
+  border-top-left-radius: 100%;
+  transform: translate(849px, 116px) rotate(0deg);
+  background: #656450e0;
+}
+
+@keyframes rolling {
+  0% {
+    transform: translate(-70px, -220px) rotate(0deg);
+  }
+  10% {
+    transform: translate(100px, 340px) rotate(360deg);
+  }
+
+  20% {
+    transform: translate(200px, 100px) rotate(660deg);
+  }
+
+  40% {
+    transform: translate(280px, 340px) rotate(1000deg);
+  }
+
+  60% {
+    transform: translate(450px, 150px) rotate(1430deg);
+  }
+  80% {
+    transform: translate(640px, 340px) rotate(1790deg);
+  }
+  90% {
+    transform: translate(786px, 340px) rotate(1880deg);
+  }
+  95% {
+    transform: translate(780px, 350px) rotate(1880deg);
+  }
+  100% {
+    transform: translate(800px, 360px) rotate(1880deg);
+  }
+}
